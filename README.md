@@ -35,10 +35,14 @@ Wait for the command here to build the docker image and spin up the container. T
 1. Frome home directory click on New Dashboard
 <img src="./images/Create-Dashboard.png">
 
-2. From there on in Query select the Local_Graphite
+2. Next click on the Add-Query
+<img src="./images/Add-Query.png">
+
+3. From there on in Query select the Local_Graphite
 <img src="./images/Select-Local_Graphite.png">
 
-3. Continue selecting fields as shown below
+4. Continue selecting fields as shown below
+
 <img src="./images/select-data.png">
 
 ## Now go ahead and have fun and your graphite link will be on http://localhost
