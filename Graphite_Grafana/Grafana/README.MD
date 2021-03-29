@@ -1,0 +1,1 @@
+This Docker File builds a grafana image(alpine) with root access and vim editor for development purposes.

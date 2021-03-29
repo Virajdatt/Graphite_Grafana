@@ -1,0 +1,40 @@
+version: '3.0'
+
+services:
+   
+   graphite:
+      image: graphiteapp/graphite-statsd
+      ports: 
+       - "80:80"
+       - "2003-2004:2003-2004"
+       - "2003-2004:2003-2004/udp"
+       - "2023-2024:2023-2024"
+       - "8125:8125/udp"
+       - "8126:8126"
+      #Needs to be changed
+      volumes: 
+       - "~/Desktop/volume/graphite_storage:/opt/graphite/storage"
+
+      container_name: graphite
+  
+
+   grafana:
+    build: ./grafana
+    #command: RUN apk update && apk add vim
+    ports:
+     - 3000:3000
+    #Needs to be changed
+    volumes:
+     - "~/Desktop/volume/grafana_config/provisioning:/etc/grafana/provisioning/" 
+    depends_on: 
+      - graphite 
+    container_name: grafana
+
+   
+   dummy_py:
+      build: ./dummy_data
+      depends_on: 
+      - graphite
+
+
+      
