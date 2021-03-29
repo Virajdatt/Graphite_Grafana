@@ -11,19 +11,14 @@ The Pre-requiste for to use the repo is you should have docker and docker-compos
 
 ## How to use the above code.
 
-### 1
-<code>git clone https://github.com/Virajdatt/Graphite_Grafana.git</code>
-### 2
-<code>cd Graphite_Grafana</code>
-### 3
-<code>make create_volumes</code>
-
-### 4
-<code>make dbuild</code>
-
-
+### 1 <code>git clone https://github.com/Virajdatt/Graphite_Grafana.git</code>
+### 2 <code>cd Graphite_Grafana</code>
+### 3 <code>make create_volumes</code>
+### 4 <code>make dbuild</code>
 ### 5 then open a browser and hit localhost:3000, should open the grafana link, login using default creds 
 - usename:- admin 
 - password:- admin
 
 <img src="./images/Grafana-Login.png">
+
+
